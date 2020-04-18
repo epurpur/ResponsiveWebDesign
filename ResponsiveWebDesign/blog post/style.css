@@ -1,7 +1,13 @@
-* {
+* {   /*Modifies everything in document */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 body {
@@ -32,5 +38,54 @@ h2 {
 
 .author-text {
     font-size: 22px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 10px;
 }
 
+.container {
+    width: 1140;
+    margin: 20px auto 0 auto;
+}
+
+.blog-post {
+    width: 75%;
+    float: left;
+    padding-right: 30px;
+    position: relative;
+}
+
+.other-posts {
+    width: 25%;
+    float: left;
+}
+
+.author-box {
+    padding-top: 20px;
+    border-top: 1px solid #767676;
+}
+
+.other {
+    margin-bottom: 40px
+}
+
+.author-box img {
+    /*only images inside author box */
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;   /* circular image */
+    float: left;
+}
+
+.blog-post img {
+    height: 150px;
+    width: auto;
+}
+
+.date {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 30px;
+    margin-top: 10px;
+}
