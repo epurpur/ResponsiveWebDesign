@@ -1,3 +1,10 @@
+/* Orange Color - #e67e22 */
+
+
+/* -------------------------------------  */
+/* BASIC SETUP */
+/* -------------------------------------  */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,25 +20,19 @@ html {                            /* These are global styles for everything with
     text-rendering: optimizeLegibility;
 }
 
-.row{
+
+/* -------------------------------------  */
+/* REUSABLE COMPONENTS */
+/* -------------------------------------  */
+
+.row {
     max-width: 1140px;
     margin: 0 auto 0 auto;
 }
 
-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);  /* sets image transparency */
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
-
-.hero-text-box {
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);  /* This function translates element half of it's width and height up and to the left */
-}
+/* -------------------------------------  */
+/* HEADINGS */
+/* -------------------------------------  */
 
 h1 {
     margin: 0%;
@@ -43,6 +44,10 @@ h1 {
     letter-spacing: 1px;
     word-spacing: 3px;
 }
+
+/* -------------------------------------  */
+/* BUTTONS */
+/* -------------------------------------  */
 
 .btn:link,                          /* pseudo class. <a> element in it's normal state (no click no hover) */
 .btn:visited {
@@ -83,3 +88,63 @@ h1 {
     border: 1px solid #e67e22;
     color: #fff;
 }
+
+/* -------------------------------------  */
+/* HEADER */
+/* -------------------------------------  */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);  /* sets image transparency */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* This function translates element half of it's width and height up and to the left */
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {            /* Selects all li elements inside main-nav class */
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {          /* Selects all li elements inside main-nav class. Then all a tags within li elements */
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;       /* The border exists before we see it, but it is transparent before we hover over it */
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;            /* Border becomes visible upon hovering */
+}
+
+
+
+
+
+
+
