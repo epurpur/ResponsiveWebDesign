@@ -11,14 +11,13 @@
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css"
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet" type="text/css">
         <title> Omnifood </title>
-    
-    
     </head>
     <body>
         <header>
-            <nav>
+            <nav class='sticky'>
                 <div class="row">
                     <img src="resources/css/img/logo-white.png" alt="Omnifood logo" class="logo">
+                    <img src="resources/css/img/logo.png" alt="Omnifood logo" class="logo-black">
                     <ul class="main-nav">
                         <li><a href="#"> Food Delivery </a></li>
                         <li><a href="#"> How it works </a></li>
@@ -29,12 +28,12 @@
             </nav>
             <div class="hero-text-box">
                 <h1> Goodbye junk food <br> Hello super healthy meals </h1>
-                <a class="btn btn-full" href="#"> I'm hungry </a>   <!-- Class button with btn-full inside -->
-                <a class="btn btn-ghost" href="#"> Show me more </a>          <!-- Class button with btn-ghost inside -->
+                <a class="btn btn-full js--scroll-to-plans" href="#"> I'm hungry </a>   <!-- Class button with btn-full inside -->
+                <a class="btn btn-ghost js--scroll-to-start" href="#"> Show me more </a>          <!-- Class button with btn-ghost inside -->
             </div>
         </header>
         
-        <section class="section-features">
+        <section class="section-features js--section-features">
             <div class="row">
                 <h2> Get food fast &mdash; not fast food </h2>        <!-- mdash is for a better looking dash -->
                 <p class="long-copy">
@@ -251,7 +250,7 @@
         </section>
         
         
-        <section class="section-plans">
+        <section class="section-plans js--section-plans">
             <div class="row">
                 <h2> Start eating healthy today </h2>
             </div>
@@ -411,10 +410,23 @@
             
         </footer>
         
+    <!-- jQuery link  --> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+        
+    <!-- Enables css media queries in older browsers -->
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <!-- Enables HTML5 elements in older browsers -->
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <!-- Enables CSS3 pseudo classes in older versions of Internet Explorer  -->
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+        
+    <!-- Javascript waypoints link. Our own script is the last one to call -->
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+        
+    <!-- jQuery link  -->
+    <script src="resources/js/script.js"></script>
+        
     </body>
-
-
-
 
 </html>
 
