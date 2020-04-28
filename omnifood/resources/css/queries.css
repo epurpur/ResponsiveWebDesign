@@ -65,7 +65,19 @@
         margin: 0% 0% 4% 0%
     }
     
-    .main-nav {display: none;}
+    /*.main-nav {display: none;}*/
+    .mobile-nav-icon {display: inline-block;}
+    
+
+    
+    
+    .sticky .main-nav {margin-top: 10px;}
+    
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {padding: 10px 0;}
+    
+    .sticky .logo {display: none;}
+    .sticky .logo-black {display: block; }
     
     h1 {font-size: 180%}
     h2 {font-size: 140%}
